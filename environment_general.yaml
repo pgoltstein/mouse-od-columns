@@ -15,4 +15,4 @@ dependencies:
   - statsmodels=0.14.1
   - tqdm=4.67.1
   - pip:
-      - scanimage-tiff-reader=1.4.1.4
+      - scanimage-tiff-reader
