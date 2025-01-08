@@ -71,6 +71,8 @@ Your directory structure should look like this:
 #### Part 0c: Create analysis environment
 
 1. Create the python environment from the (system dependent) yaml file in the code folder  
+``` conda env create -f ./code/environment_general.yaml --name mouseodcolumns ```   
+or try
 ``` conda env create -f ./code/environment_windows.yaml --name mouseodcolumns ```   
 or  
 ``` conda env create -f ./code/environment_macosx.yaml --name mouseodcolumns ```
