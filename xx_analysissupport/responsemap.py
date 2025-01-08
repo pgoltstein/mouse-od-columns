@@ -101,8 +101,8 @@ def hlsmap( hlsname, stimuli, bs_images, stim_images, max_dfof=0, colormap="hsv"
     disk_kernel = skimage.morphology.disk(radius=1)
     with tqdm(total=n_trials, desc="Filtering", unit="trial") as bar:
         for t in range(n_trials):
-            bs_images[:,:,t] = skimage.filters.rank.median(bs_images[:,:,t], disk_kernel)
-            stim_images[:,:,t] = skimage.filters.rank.median(stim_images[:,:,t], disk_kernel)
+            bs_images[:,:,t] = skimage.filters.rank.median(bs_images[:,:,t], footprint=disk_kernel)
+            stim_images[:,:,t] = skimage.filters.rank.median(stim_images[:,:,t], footprint=disk_kernel)
             bar.update(1)
 
     print("bs_images intensities: {} (min)  {} (max)".format(np.nanmin(bs_images),np.nanmax(bs_images)))
