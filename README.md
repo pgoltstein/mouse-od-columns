@@ -34,7 +34,7 @@ _Follow instructions on https://gin.g-node.org (under the 'Help' tab)_
 cd mouse-od-columns
 gin get-content
 ```  
-Note that this can take a long time as it downloads about <<!!! CHECK !!!>> 98 GB <<!!! CHECK !!!>> of data.
+Note that this can take some time as it downloads about 47 GB of data.
 
 Or, if you prefer, you can instead download the data manually from gin.g-node  
 https://gin.g-node.org/pgoltstein/mouse-od-columns  
