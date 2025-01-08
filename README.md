@@ -106,15 +106,15 @@ Data processing for 1g-i:
 *	``` python process-layer4-clusters-across-mice.py b6-gcamp6s -r ```
 
 Data processing for S4a-c:
-*	``` python process-layer4-clusters-across-mice-fraction.py -f 0```  
+*	``` python process-layer4-clusters-across-mice-fraction.py -f 0 ```  
   Also run this separately for the three global shuffle controls, so adding the ```-sh```, ```-u``` and ```-r``` flags respectively (see Data processing for 1g-i)
 
 Data processing for S5a-c:
-* ``` python process-layer4-clusters-across-mice-fraction.py -f -0.3```  
+* ``` python process-layer4-clusters-across-mice-fraction.py -f -0.3 ```  
   Also run this separately for the three global shuffle controls, so adding the ```-sh```, ```-u``` and ```-r``` flags respectively (Data processing for 1g-i)
 
 Data processing for S5d-f:
-* ``` python process-layer4-clusters-across-mice-fraction.py -f sign```  
+* ``` python process-layer4-clusters-across-mice-fraction.py -f sign ```  
   Also run this separately for the three global shuffle controls, so adding the ```-sh```, ```-u``` and ```-r``` flags respectively (Data processing for 1g-i)
 
 Data processing for S6c-e:
@@ -213,8 +213,8 @@ Data processing for 2f-i and S11 (step 2):
 *	``` python process-cellbased-crosscorrelationmaps-across-mice.py ``` (real data)  
 *	``` python process-cellbased-crosscorrelationmaps-across-mice.py  -sh 0 ``` (shuffled odi)
 *	``` python process-cellbased-crosscorrelationmaps-across-mice.py  -pl 0 ``` (select plane from random other mouse)
-*	``` python process-cellbased-crosscorrelationmaps-across-mice.py  -sw 0 -d 100``` (local swap of odi values at 100 micron distance)
-*	``` python process-cellbased-crosscorrelationmaps-across-mice.py  -sw 0 -d 200``` (local swap of odi values at 200 micron distance)
+*	``` python process-cellbased-crosscorrelationmaps-across-mice.py  -sw 0 -d 100` `` (local swap of odi values at 100 micron distance)
+*	``` python process-cellbased-crosscorrelationmaps-across-mice.py  -sw 0 -d 200 ``` (local swap of odi values at 200 micron distance)
   Run this 10 times for each of the shuffle controls, replacing the '0' with other integer numbers, see step 1.
 
 #### Figure 2
@@ -257,8 +257,8 @@ Note: There is already processed data supplied in the repository, however, in ca
 
 Data processing for 3c-i, S12d-h, and S13:
 *	``` python process-od-map-relations.py ```
-*	``` python process-od-map-relations.py -shodi 0```
-*	``` python process-od-map-relations.py -shori 0```
+*	``` python process-od-map-relations.py -shodi 0 ```
+*	``` python process-od-map-relations.py -shori 0 ```
   Run this 10 times for each of the shuffle controls (so with ```-shodi 0```, ```-shodi 1```, ..., ```-shodi 10``` and with ```-shori 0```, ```-shori 1```, ..., ```-shori 10``` )
 
 #### Figure 3
