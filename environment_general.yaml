@@ -3,16 +3,16 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - matplotlib
-  - numpy
-  - pandas
+  - matplotlib=3.7.3
+  - numpy=1.24.4
+  - pandas=2.0.3
   - python=3.11.7
-  - python-box
-  - scikit-image
-  - scikit-learn
-  - scipy
-  - seaborn=
-  - statsmodels
-  - tqdm
+  - python-box=7.2.0
+  - scikit-image=0.21.0
+  - scikit-learn=1.3.2
+  - scipy=1.10.1
+  - seaborn=0.13.2
+  - statsmodels=0.14.1
+  - tqdm=4.67.1
   - pip:
-      - scanimage-tiff-reader
+      - scanimage-tiff-reader=1.4.1.4
