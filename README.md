@@ -72,7 +72,7 @@ Your directory structure should look like this:
 
 1. Create the python environment from the (system dependent) yaml file in the code folder  
 ``` conda env create -f ./code/environment_general.yaml --name mouseodcolumns ```   
-or try
+or try  
 ``` conda env create -f ./code/environment_windows.yaml --name mouseodcolumns ```   
 or  
 ``` conda env create -f ./code/environment_macosx.yaml --name mouseodcolumns ```
@@ -92,6 +92,7 @@ The maps will be saved in the folder called "figureout"
 
 ### Part 1: Clusters for Ocular Dominance in cortical layer 4
 
+These paths are just FYI:  
 Code path: “./code/part1-od-clusters-layer4”  
 Data paths: “./data/part1-responsemapdata”, “./data/part1-planedata-od-layer4”, “./data/part1-planedata-retinotopy-layer4”, “./data/part1-planedata-od-layer4-caiman”, “./data/part1-tileddata-od-layer4”, “./data/part1-tileddata-ret-layer4”  
 Processed data path: “./data/part1-processeddata"  
@@ -180,6 +181,7 @@ Data processing for S7g-i:
 
 ### Part 2: Column-like vertical organization for Ocular Dominance across cortical layers 2/3, 4 and 5
 
+These paths are just FYI:  
 Code path: “./code/part2-od-columns-layer2345”  
 Data paths: “./data/part2-responsemaps-od-layer2345”, “./data/part2-planedata-od-layer2345”, “./data/part2-sideviewdata-od-layer2345”, “./data/part2-odimapsdata-od-layer2345”, “./data/part2-ccmapsdata-od-layer2345”, “./data/part2-roi-footprints”  
 Processed data path: “./data/part2-processeddata"  
@@ -246,6 +248,7 @@ Data processing for 2f-i and S11 (step 2):
 
 ### Part 3: L4 ipsi-clusters show a non-random spatial arrangement, but no relationship with the retinotopic map
 
+These paths are just FYI:  
 Code path: “./code/part3-od-map-relationships”  
 Data paths: “./data/part1-planedata-od-layer4”, “./data/part1-planedata-retinotopy-layer4”  
 Processed data path: "./data/part3-processeddata-layer4"
