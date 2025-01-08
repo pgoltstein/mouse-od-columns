@@ -21,7 +21,7 @@ _Follow instructions on https://gin.g-node.org (under the 'Help' tab)_
 
 #### Part 0b: Download the data
 
-1. Open up any type of command line shell (csh, bash, zsh, cmd.exe, etc) and change the current directory to a drive/folder in which you like to have the entire project. The dataset is approximately 98 GB, so make sure you have enough free disk space.
+1. Open up any type of command line shell (csh, bash, zsh, cmd.exe, etc) and change the current directory to a drive/folder in which you like to have the entire project. The dataset is approximately 47 GB, so make sure you have enough free disk space.
 
 2. Log in on the gin server  
 ``` gin login ```  
