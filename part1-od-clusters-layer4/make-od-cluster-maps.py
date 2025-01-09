@@ -42,7 +42,7 @@ import argparse
 
 parser = argparse.ArgumentParser( description = "This script loads data of a single imaging volume, shows OD and eye-preference density, and finds clusters and calculates ODI for clusters.\n (written by Pieter Goltstein - Dec 2024)")
 parser.add_argument('mouse', type=str, help= 'name of the mouse to analyze')
-parser.add_argument('-e', '--extendeddata',  action="store_true", default=False, help='Flag for scaling y-axis and doing swap control for extended data')
+parser.add_argument('-si', '--supplementaryinformation',  action="store_true", default=False, help='Flag for scaling y-axis and doing swap control for supplementary information')
 parser.add_argument('-n', '--nswaps', type=int, default=100, help='manually set the number of repeats for the local randomization control, i.e. the swapping-neuron-locations routine (default=100).')
 args = parser.parse_args()
 
@@ -134,7 +134,7 @@ XY_contra = XY[ODI>0,:]
 #<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 # Show a histogram of OD values
 
-if not args.extendeddata:
+if not args.supplementaryinformation:
     m,e,_ = statstools.mean_sem(ODI)
     fig,ax = plottingtools.init_figure(fig_size=(6,4))
     ax = sns.histplot(data=ODI, ax=ax, binwidth=0.1, stat="probability", color="#999999")
@@ -243,7 +243,7 @@ for odi_ix in range(len(odi_contours)):
 plt.gca().invert_yaxis()
 
 # Save figure
-if not args.extendeddata:
+if not args.supplementaryinformation:
     savefile = os.path.join( savepath, figname+"c-{}-od-cellmaps-clusters".format(args.mouse) )
 else:
     savefile = os.path.join( savepath, figname+"bc-{}-od-cellmaps-clusters".format(args.mouse) )
@@ -287,7 +287,7 @@ x0,y0,c,k = p # k is steepness
 odi_fit = sigmoid(p,xvalues_fit/100)
 
 # Prepare figure
-if not args.extendeddata:
+if not args.supplementaryinformation:
 
     fig,ax = plottingtools.init_figure(fig_size=(3.5,3))
     for c_nr in range(len(clusters)):
@@ -316,9 +316,9 @@ else:
 
 
 #<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-# If extended data flag is set, then do the 'swap neurons' control
+# If supplementary information flag is set, then do the 'swap neurons' control
 
-if args.extendeddata:
+if args.supplementaryinformation:
 
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     # Functions
