@@ -26,7 +26,7 @@ _Follow instructions on https://gin.g-node.org (under the 'Help' tab)_
 2. Log in on the gin server  
 ``` gin login ```  
 
-3. Start by downloading the 'small file' dataset using this command. This downloads the folder structure and 2-3 GB of data. During the process, it can appear to be 'doing nothing' and giving no updates for quite a while, no stress, even if this takes 10-15 min. 
+3. Start by downloading the 'small file' dataset using this command. This downloads the folder structure and 2-3 GB of data. During the process, it can appear to be 'doing nothing' and giving no updates for quite a while, no stress, even if this takes 10-15 min.  
 ``` gin get pgoltstein/mouse-od-columns ```  
 
 4. Then download the 'large files' from within the repository folder using this command
@@ -34,7 +34,7 @@ _Follow instructions on https://gin.g-node.org (under the 'Help' tab)_
 cd mouse-od-columns
 gin get-content
 ```  
-Note that this will take quite some time (several hours) as it downloads about 48 GB of data.
+Note that this will take quite some time (several hours) as it downloads about 48 GB of data (which it duplicates in the .git folder). After downloading, as far as I am concerned, you may delete the .git folder again to regain the about 48 GB opf drive space.
 
 If you prefer, you can also download the data manually from gin.g-node  
 https://gin.g-node.org/pgoltstein/mouse-od-columns  
