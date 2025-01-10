@@ -37,12 +37,12 @@ parser.add_argument('-shori', '--shuffleori', type=int, default=-1, help='Flag e
 args = parser.parse_args()
 
 # Settings
-mice = ["O02", "O03",]
-# mice = ["O02", "O03", "O06", "O07", "O09", "O10", "O11", "O12", "O13"]
+mice = ["O02", "O03", "O06", "O07", "O09", "O10", "O11", "O12", "O13"]
 savepath = os.path.join("../../data/part3-processeddata-layer4")
 settings = odcfunctions.generalsettings("L4")
 settings.cluster.method = "od-geometry"
 settings.map.smooth_sigma = 42
+fn_sh_append = ""
 if args.shuffleodi > -1:
     settings.data.shuffle = "odi"
     fn_sh_append += "-sh-odi-{}".format(args.shuffleodi)
