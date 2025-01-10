@@ -142,14 +142,14 @@ Data processing for S7g-i:
 * 1g-i: ``` python show-layer4-clusters-across-mice.py b6-gcamp6s ```
 
 #### Supplementary Figure 1
-*	S1a (row 1, M03): ``` python make-response-maps.py O06 1 -maxhls 20 ```
-*	S1a (row 2, M01): ``` python make-response-maps.py O02 1 -maxhls 20 ```
-*	S1a (row 3, M08): ``` python make-response-maps.py O12 1 -maxhls 30 ```
-*	S1a (row 4, M05): ``` python make-response-maps.py O09 1 -maxhls 30 ```
-*	S1b,c,e (row 1, M03): ``` python make-od-cluster-maps.py O06 --si ```
-*	S1b,c,e (row 2, M01): ``` python make-od-cluster-maps.py O02 --si ```
-*	S1b,c,e (row 3, M08): ``` python make-od-cluster-maps.py O12 --si ```
-*	S1b,c,e (row 4, M05): ``` python make-od-cluster-maps.py O09 --si ```
+*	S1a (row 1, M03): ``` python make-response-maps.py O06 1 --maxhls 20 ```
+*	S1a (row 2, M01): ``` python make-response-maps.py O02 1 --maxhls 20 ```
+*	S1a (row 3, M08): ``` python make-response-maps.py O12 1 --maxhls 30 ```
+*	S1a (row 4, M05): ``` python make-response-maps.py O09 1 --maxhls 30 ```
+*	S1b,c,e (row 1, M03): ``` python make-od-cluster-maps.py O06 -si ```
+*	S1b,c,e (row 2, M01): ``` python make-od-cluster-maps.py O02 -si ```
+*	S1b,c,e (row 3, M08): ``` python make-od-cluster-maps.py O12 -si ```
+*	S1b,c,e (row 4, M05): ``` python make-od-cluster-maps.py O09 -si ```
 *	S1d (row 1, M03): ``` python make-retinotopy-scatter-maps.py O06 ```
 *	S1d (row 2, M01): ``` python make-retinotopy-scatter-maps.py O02 ```
 *	S1d (row 3, M08): ``` python make-retinotopy-scatter-maps.py O12 ```
