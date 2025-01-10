@@ -101,6 +101,8 @@ The maps will be saved in the folder called "figureout"
 
 ### Part 1: Clusters for ocular dominance in cortical layer 4
 
+First, make sure to run the code from the correct folder, which for part 1 is: "part1-od-clusters-layer4". If you are not already there, use the ```cd <folder name>``` command to move into a directory (see e.g. step 3 above), and use ```cd ..``` to move out again. Use the ```dir``` command to get an overview of which folder/directory you are in, and what files and subdirectories are present.
+
 These paths are just FYI:  
 * Code path: “./code/part1-od-clusters-layer4”  
 * Data paths: “./data/part1-responsemapdata”, “./data/part1-planedata-od-layer4”, “./data/part1-planedata-retinotopy-layer4”, “./data/part1-planedata-od-layer4-caiman”, “./data/part1-tileddata-od-layer4”, “./data/part1-tileddata-ret-layer4”  
@@ -197,6 +199,8 @@ _Note: The code for panel S2h runs 200 odi-swap iterations which can take some t
 
 ### Part 2: Column-like vertical organization for ocular dominance across cortical layers 2/3, 4 and 5
 
+Make sure to run the code from the correct folder, which for part 2 is: "part2-od-columns-layer2345". For more info, see part 1 above.
+
 These paths are just FYI:
 * Code path: “./code/part2-od-columns-layer2345”  
 * Data paths: “./data/part2-responsemaps-od-layer2345”, “./data/part2-planedata-od-layer2345”, “./data/part2-sideviewdata-od-layer2345”, “./data/part2-odimapsdata-od-layer2345”, “./data/part2-ccmapsdata-od-layer2345”, “./data/part2-roi-footprints”  
@@ -267,6 +271,8 @@ Run this 10 times for each of the shuffle controls, replacing the '0' with other
 ---
 
 ### Part 3: Layer 4 ipsi-clusters show a non-random spatial arrangement, but no relationship with the retinotopic map
+
+Make sure to run the code from the correct folder, which for part 3 is: "part3-od-map-relations". For more info, see part 1 above.
 
 These paths are just FYI:  
 * Code path: “./code/part3-od-map-relations”  
