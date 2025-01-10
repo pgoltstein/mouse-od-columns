@@ -21,12 +21,12 @@ _Follow instructions on https://gin.g-node.org (under the 'Help' tab)_
 
 #### Part 0b: Download the data
 
-1. Open up any type of command line shell (csh, bash, zsh, cmd.exe, etc) and change the current directory to a drive/folder in which you like to have the entire project (e.g. ```D:/Data``` on a Windows PC, or ```/Users/<username>/data``` on a Mac). The dataset is approximately 48 GB so make sure you have enough free disk space.
+1. Open up any type of command line shell (csh, bash, zsh, cmd.exe, etc) and change the current directory to a drive/folder in which you like to have the entire project (e.g. something like ```D:/data``` or ```E:/data``` on a Windows PC, or ```/Users/<username>/data``` on a Mac). The dataset is approximately 48 GB. For some reason the automatic downloading of the repository using gin creates a huge (also close to 48 GB) .git folder... So make sure you have enough free disk space (~100 GB). There is also the option of manually downloading the repo from the website, that might prevent the .git folder issue.
 
 2. Log in on the gin server  
 ``` gin login ```  
 
-3. Start by downloading the 'small file' dataset using this command  
+3. Start by downloading the 'small file' dataset using this command. This downloads the folder structure and 2-3 GB of data. During the process, it can appear to be 'doing nothing' and giving no updates for quite a while, no stress, even if this takes 10-15 min. 
 ``` gin get pgoltstein/mouse-od-columns ```  
 
 4. Then download the 'large files' from within the repository folder using this command
@@ -34,9 +34,9 @@ _Follow instructions on https://gin.g-node.org (under the 'Help' tab)_
 cd mouse-od-columns
 gin get-content
 ```  
-Note that this can take some time as it downloads about 48 GB of data.
+Note that this will take quite some time (several hours) as it downloads about 48 GB of data.
 
-Or, if you prefer, you can instead download the data manually from gin.g-node  
+If you prefer, you can also download the data manually from gin.g-node  
 https://gin.g-node.org/pgoltstein/mouse-od-columns  
 
 #### Part 0c: Download the code
@@ -74,7 +74,13 @@ Your directory structure should look like this:
 #### Part 0c: Create analysis environment
 
 1. Create the python environment from the yaml file in the code folder  
+For Max OSX:  
+``` conda env create -f ./code/environment_macosx.yaml --name mouseodcolumns ```  
+For Windows:  
+``` conda env create -f ./code/environment_windows.yaml --name mouseodcolumns ```  
+Or, the general requirements are in this file ("environment_general.yaml"), however, note that it can easily take >1 hour for conda to solve this environment. 
 ``` conda env create -f ./code/environment_general.yaml --name mouseodcolumns ```   
+_Specifically, it seems like scikit-image is the biggest culprit, if you like to bypass this hazzle and cannot use the detailed OS specific .yaml files, consider a newer python version, consider installing the packages by hand, being less restrictive on versions, try installing scikit-image using pip, or try mamba._
 
 2. Activate the environment  
 ```conda activate mouseodcolumns ```
