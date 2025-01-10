@@ -6,8 +6,6 @@ This script loads binned odi map data and calculates the cross correlations over
 
 python process-cellbased-crosscorrelationmaps-across-mice.py 
 
-    "/Users/pgoltstein/Library/CloudStorage/OneDrive-Personal/OD Mapping/Data/L23-L4-L5-responsemaps" /Users/pgoltstein/figures/ cells 6 128 16 -q -cc "/Users/pgoltstein/Library/CloudStorage/OneDrive-Personal/OD Mapping/Data/L23-L4-L5-CC-data" -m O03
-
 Created on Sunday 15 May 2022
 
 @author: pgoltstein

@@ -6,8 +6,6 @@ This script loads data of a single imaging volume, finds clusters and calculates
 
 Created on Monday 5 Feb 2024
 
-python singlevolume-OD-L4-clusters-single-trial.py "/Users/pgoltstein/OneDrive/OD Mapping/Data/L4-OD-spikes/" /Users/pgoltstein/figures/ O03
-
 @author: pgoltstein
 """
 
