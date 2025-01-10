@@ -157,7 +157,7 @@ df_od.info()
 cluster_specs_sh_odi = []
 df_sh_odi = pd.DataFrame(columns=df_columns)
 for sh in range(10):
-    filename = "/Users/pietergoltstein/OneDrive/OD Mapping/Data/L4-geometry/od-clusters-descriptives-sh-odi-{}.npz".format(sh)
+    filename = os.path.join(datapath,"od-clusters-descriptives-sh-odi-{}.npz".format(sh))
     print("Loading: {}".format(filename))
     datafile_sh = np.load(filename, allow_pickle=True)
     
@@ -182,7 +182,7 @@ df_sh_odi.info()
 cluster_specs_sh_ori = []
 df_sh_ori = pd.DataFrame(columns=df_columns)
 for sh in range(10):
-    filename = "/Users/pietergoltstein/OneDrive/OD Mapping/Data/L4-geometry/od-clusters-descriptives-sh-ori-{}.npz".format(sh)
+    filename = os.path.join(datapath,"od-clusters-descriptives-sh-ori-{}.npz".format(sh))
     print("Loading: {}".format(filename))
     datafile_sh = np.load(filename, allow_pickle=True)
     
