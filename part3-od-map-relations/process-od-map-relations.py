@@ -43,7 +43,6 @@ savepath = os.path.join("../../data/part3-processeddata-layer4")
 settings = odcfunctions.generalsettings("L4")
 settings.cluster.method = "od-geometry"
 settings.map.smooth_sigma = 42
-fn_sh_append = "-sm{}".format(settings.map.smooth_sigma)
 if args.shuffleodi > -1:
     settings.data.shuffle = "odi"
     fn_sh_append += "-sh-odi-{}".format(args.shuffleodi)
