@@ -74,11 +74,14 @@ Your directory structure should look like this:
 #### Part 0c: Create analysis environment
 
 1. Create the python environment from the yaml file in the code folder  
+
 For Max OSX:  
 ``` conda env create -f ./code/environment_macosx.yaml --name mouseodcolumns ```  
+
 For Windows:  
 ``` conda env create -f ./code/environment_windows.yaml --name mouseodcolumns ```  
-Or, the general requirements are in this file ("environment_general.yaml"), however, note that it can easily take >1 hour for conda to solve this environment. 
+
+Or, the general requirements are in this file ("environment_general.yaml"), however, note that it can easily take >1 hour for conda to solve this environment.  
 ``` conda env create -f ./code/environment_general.yaml --name mouseodcolumns ```   
 _Specifically, it seems like scikit-image is the biggest culprit, if you like to bypass this hazzle and cannot use the detailed OS specific .yaml files, consider a newer python version, consider installing the packages by hand, being less restrictive on versions, try installing scikit-image using pip, or try mamba._
 
