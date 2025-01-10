@@ -74,7 +74,7 @@ def init_figure( fig_size=(10,7), dpi=80, facecolor="w", edgecolor="w" ):
         return fig,ax
 
 def finish_figure( filename=None, wspace=None, hspace=None, filetype="pdf" ):
-    """ Finish up layout and save to ~/figures"""
+    """ Finish up layout and save """
     plt.tight_layout()
     if wspace is not None or hspace is not None:
         if wspace is None: wspace = 0.6
