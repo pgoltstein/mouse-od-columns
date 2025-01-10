@@ -209,7 +209,7 @@ ax = sns.histplot(data=ODI, ax=ax, binwidth=0.1, stat="probability", color="#999
 plottingtools.finish_panel( ax, title="Mean ODI of tuned neurons: {:5.3f} (±{:5.3f}))".format( m, e ), ylabel="p", xlabel="ODI", legend="off", y_minmax=[0,0.151], y_step=[0.05,2], y_margin=0.0, y_axis_margin=0.0, x_minmax=[-1.0,1.01], x_step=[0.5,1], x_margin=0.05, x_axis_margin=0.02, x_ticks=None, x_ticklabels=None, y_ticks=None, y_ticklabels=None, x_tick_rotation=0, tick_size=6, label_size=6, title_size=6, legend_size=6, despine=True, legendpos=0)
 
 # Save figure
-savefile = os.path.join( savepath, figname+"c-{}-denstity-odi-cellmaps-clusters-{}".format(mouse,args.preprocessing) )
+savefile = os.path.join( savepath, figname+"-{}-denstity-odi-cellmaps-clusters-{}".format(mouse,args.preprocessing) )
 plottingtools.finish_figure( filename=savefile, wspace=0.2, hspace=0.2 )
 
 
