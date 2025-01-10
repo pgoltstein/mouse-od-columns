@@ -110,6 +110,8 @@ These paths are just FYI:
 
 _Note: There is already processed data supplied in the repository, however, in case you like to rerun it, the code below will recreate the processed data_
 
+_Note 2: The code for processed data runs 200 randomizations for each control, which can take some time. This number can be set lower using the "--nrandomizations" argument, or "-n" for short (e.g. ```--nrandomizations 10``` or ```-n 10``` for using only 10 randomizations, but any other integer number will do as well)_
+
 Data processing for 1g-i:
 *	``` python process-layer4-clusters-across-mice.py b6-gcamp6s ```
 *	``` python process-layer4-clusters-across-mice.py b6-gcamp6s -sh ```
@@ -143,21 +145,23 @@ Data processing for S7g-i:
 * 1g-i: ``` python show-layer4-clusters-across-mice.py b6-gcamp6s ```
 
 #### Supplementary Figure 1
+_Note: The code for panel S2h runs 200 odi-swap iterations which can take some time. This number can be set lower using the "--nswaps" argument (e.g. ```--nswaps 10``` for 10 iterations, but any other integer number will do as well)_
 *	S1a (row 1, M03): ``` python make-response-maps.py O06 1 --maxhls 20 ```
 *	S1a (row 2, M01): ``` python make-response-maps.py O02 1 --maxhls 20 ```
 *	S1a (row 3, M08): ``` python make-response-maps.py O12 1 --maxhls 30 ```
 *	S1a (row 4, M05): ``` python make-response-maps.py O09 1 --maxhls 30 ```
-*	S1b,c,e (row 1, M03): ``` python make-od-cluster-maps.py O06 -si ```
-*	S1b,c,e (row 2, M01): ``` python make-od-cluster-maps.py O02 -si ```
-*	S1b,c,e (row 3, M08): ``` python make-od-cluster-maps.py O12 -si ```
-*	S1b,c,e (row 4, M05): ``` python make-od-cluster-maps.py O09 -si ```
+*	S1b, c, e (row 1, M03): ``` python make-od-cluster-maps.py O06 -si ```
+*	S1b, c, e (row 2, M01): ``` python make-od-cluster-maps.py O02 -si ```
+*	S1b, c, e (row 3, M08): ``` python make-od-cluster-maps.py O12 -si ```
+*	S1b, c, e (row 4, M05): ``` python make-od-cluster-maps.py O09 -si ```
 *	S1d (row 1, M03): ``` python make-retinotopy-scatter-maps.py O06 ```
 *	S1d (row 2, M01): ``` python make-retinotopy-scatter-maps.py O02 ```
 *	S1d (row 3, M08): ``` python make-retinotopy-scatter-maps.py O12 ```
 *	S1d (row 4, M05): ``` python make-retinotopy-scatter-maps.py O09 ```
 
 #### Supplementary Figure 2
-*	S2a, d, e-g: ``` python make-tiled-func-maps.py O10 ```
+_Note: The code for panel S2h runs 200 odi-swap iterations which can take some time. This number can be set lower using the "--nswaps" argument (e.g. ```--nswaps 10``` for 10 iterations, but any other integer number will do as well)_
+*	S2a, d, e-h: ``` python make-tiled-func-maps.py O10 ```
 *	S2b, c: ``` python make-tiled-func-ret-maps.py O10 ```
 
 #### Supplementary Figure 3
@@ -201,6 +205,8 @@ These paths are just FYI:
 #### Data processing for part 2
 
 _Note: There is already processed data supplied in the repository, however, in case you like to rerun it, the code below will recreate the processed data_
+
+_Note 2: The code for processed data for 2c-e runs 100 randomizations for each control, which can take some time. This number can be set lower using the "--nrandomizations" argument, or "-n" for short (e.g. ```--nrandomizations 10``` or ```-n 10``` for using only 10 randomizations, but any other integer number will do as well)_
 
 Data processing for 2c-e:
 *	``` python process-layer2345-columns-across-mice.py ```
