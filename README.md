@@ -186,7 +186,7 @@ _Note: The code for panel S2h runs 200 odi-swap iterations which can take some t
 * S6c-e: ``` python show-layer4-clusters-across-mice-caiman.py ```
 
 #### Supplementary Figure 7
-*	S7a,b: ``` python make-response-maps.py O40 1 -maxhls 30 -reverseodi --examplecells 8 10 7 ```
+*	S7a,b: ``` python make-response-maps.py O40 1 --maxhls 30 -reverseodi --examplecells 8 10 7 ```
 * S7c-e: ``` python make-od-cluster-maps.py O40 ```
 * S7f: ``` python make-retinotopy-scatter-maps.py O40 ```
 * S7g-i: ``` python show-layer4-clusters-across-mice.py scn1a-jrgeco1a ```  
