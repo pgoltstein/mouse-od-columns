@@ -10,7 +10,7 @@ Detailed instructions can be found below. In case of any questions, please do no
 
 #### Part 0a: Install programs/tools
 
-1. Download and install Python 3.11.7  (Anaconda distribution).  
+1. Download and install Python 3.8.16  (Anaconda distribution).  
 _Follow instructions on https://anaconda.org_
 
 2. Download and install “Git” (this is optional, the code can also be downloaded manually).  
