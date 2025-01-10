@@ -74,19 +74,18 @@ Your directory structure should look like this:
 #### Part 0e: Create analysis environment
 
 1. Create the python environment from the yaml file in the code folder (this can take some minutes)  
-
-For Max OSX: ``` conda env create -f ./code/environment_macosx.yaml --name mouseodcolumns ```  
-
-For Windows: ``` conda env create -f ./code/environment_windows.yaml --name mouseodcolumns ```  
-
-Or, the general requirements are in this file ("environment_general.yaml"), however, note that it can easily take >1 hour for conda to solve this environment: ``` conda env create -f ./code/environment_general.yaml --name mouseodcolumns ```  
-
+For Max OSX:  
+``` conda env create -f ./code/environment_macosx.yaml --name mouseodcolumns ```  
+For Windows:  
+``` conda env create -f ./code/environment_windows.yaml --name mouseodcolumns ```  
+Or, the general requirements are in this file ("environment_general.yaml"), however, note that it can easily take >1 hour for conda to solve this environment:  
+``` conda env create -f ./code/environment_general.yaml --name mouseodcolumns ```  
 _Specifically, it seems like scikit-image is the biggest culprit, if you like to bypass this hazzle and cannot use the detailed OS specific .yaml files, consider a newer python version, consider installing the packages by hand, being less restrictive on versions, try installing scikit-image using pip, or try mamba, ... or meditation._
 
 2. Activate the environment  
 ```conda activate mouseodcolumns ```
 
-3. All code should be run from within the respective "code path", that is, cd into the code directory and run it using python. This is for the reason that it (by defaut) will look for the data in a relative path starting from the folder where the python code is stored. So, for example, to make an ODI map as in figure 1a, starting in the base folder called "mouse-od-columns":
+3. All code should be run from within the respective "code path", that is, cd into the code directory and run it using python. This is for the reason that it (by defaut) will look for the data in a relative path starting from the folder where the python code is stored. So, for example, to make an ODI map as in figure 1a, starting in the base folder called "mouse-od-columns":  
 
 ```
 cd code
@@ -95,6 +94,7 @@ python make-response-maps.py O03 2 -m 20 --examplecells 247 1 6
 ```
 
 The maps will be saved in the folder called "figureout"
+
 
 ---
 
@@ -189,6 +189,7 @@ Data processing for S7g-i:
 
 
 ---  
+
 
 ### Part 2: Column-like vertical organization for ocular dominance across cortical layers 2/3, 4 and 5
 
