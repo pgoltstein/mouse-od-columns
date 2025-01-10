@@ -224,6 +224,7 @@ plt.imshow(grey_bg,cmap="Greys",vmin=0,vmax=1)
 singlevolumeodfunctions.show_param_2d( ax, XY_contra[:,0], XY_contra[:,1], rho_contra, "Contra preferring cells", name=None, cmap="magma", vmin=0, vmax=1, d1=min_z, d2=max_z, size=2 ) # color coded rho
 plot_clusters(clusters)
 plt.gca().invert_yaxis()
+plt.axis('off')
 
 # Show ipsi density
 ax = plt.subplot2grid((2,3),(1,0),fig=fig)
@@ -231,6 +232,7 @@ plt.imshow(grey_bg,cmap="Greys",vmin=0,vmax=1)
 singlevolumeodfunctions.show_param_2d( ax, XY_ipsi[:,0], XY_ipsi[:,1], rho_ipsi, "Ipsi preferring cells", name=None, cmap="magma", vmin=0, vmax=1, d1=min_z, d2=max_z, size=2  ) # color coded rho
 plot_clusters(clusters)
 plt.gca().invert_yaxis()
+plt.axis('off')
 
 # Show ipsi cluster centers on ODI map
 ax = plt.subplot2grid((2,3),(0,1),fig=fig, rowspan=2, colspan=2)
@@ -241,6 +243,7 @@ for odi_ix in range(len(odi_contours)):
     for c in range(len(odi_contours[odi_ix])):
         plt.plot(odi_contours[odi_ix][c][:,1],odi_contours[odi_ix][c][:,0], iso_odi_contour_linestyle[odi_ix], color="#ffffff",  markersize=0, linewidth=0.5)
 plt.gca().invert_yaxis()
+plt.axis('off')
 
 # Save figure
 if not args.supplementaryinformation:
